@@ -1,0 +1,194 @@
+.cart
+	+pad(2rem null)
+	.title
+		+pad(2rem null)
+	.box
+		border: 5px solid lighten($border, 15%)
+		a
+			text-decoration: none
+		figure
+			position: relative
+			.time
+				display: flex
+				position: absolute
+				border-radius: 3px
+				color: #fff
+				background: darken(#fff, 70%)
+				+pad(.5rem 1rem)
+				top: 1.5rem
+				right: 1rem
+				opacity: 0
+				transition: 1s all ease-in-out
+			.text
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				h2
+					+fz(1rem)
+					background: $sun-flower
+					+pad(.5rem 1rem)
+					border-radius: 3px
+					color: #fff
+					opacity: 0
+					transition: .5s all ease-in-out
+				&:hover
+					h2
+						background: #fff
+						color: #000
+						transition: .5s all ease-in-out
+					
+			.apple
+				img
+					max-height: 4rem
+					position: absolute
+					top: 1rem
+					left: 1rem
+			.sale
+				img
+					max-height: 4rem
+					position: absolute
+					top: .5rem
+					right: 1rem
+					transition: .5s all ease-in-out
+			.dinhvi
+				i
+					+fz(1.5rem)
+				+fz(.8rem)
+				display: inline-flex
+				color: #fff
+				background: darken(#fff, 50%)
+				+pad(.5rem 1rem)
+				border-radius: 3px
+				position: absolute
+				bottom: 1rem
+				left: 1rem
+			&:hover
+				.sale
+					img
+						opacity: 0
+						transition: .5s all ease-in-out
+				.text
+					h2
+						opacity: 1
+						transition: .5s all ease-in-out
+				.time
+					opacity: 1
+					transition: 1s all ease-in-out
+				
+			.voucher
+				i
+					+fz(1.5rem)
+				+fz(.8rem)
+				display: inline-flex
+				color: #fff
+				background: darken(#fff, 50%)
+				+pad(.5rem 1rem)
+				border-radius: 3px
+				position: absolute
+				bottom: 1rem
+				right: 1rem
+		figcaption
+			word-wrap: break-word
+			+pad(1rem 1rem)
+			position: relative
+			h2
+				+pad(0 null 1rem)
+				color: #000
+				+fz(1.3rem)
+				border-bottom: 1px solid $border
+				&:hover
+					color: lighten(#000, 40%)
+			h3
+				margin-bottom: 0
+				color: #f00
+				+fz(1.2rem)
+				+fw(bold)
+				+pad(.5rem null)
+				&:hover
+					color: $hover
+			h4
+				position: absolute
+				bottom: 20%
+				left: 40%
+				+fz(.8rem)
+				background: #f00
+				+pad(.5rem .8rem)
+				border-radius: 8px
+				color: #fff
+				&:after
+					content: ''
+					position: absolute
+					width: 0
+					height: 0
+					border-style: solid
+					border-width: 5px 10px 5px 0
+					border-color: transparent #f00 transparent transparent
+					transform: translate(-400%, 5%)
+			p
+				top: 1rem
+				display: inline
+				text-decoration: line-through
+				color: $border
+				+fz(.9rem)
+				+fw(bold)
+			i
+				right: 2.3rem
+				position: absolute
+				display: flex
+				flex-direction: row
+				justify-content: flex-end
+				color: $border
+				bottom: 1.5rem
+		+media-breakpoint-up(sm)
+			figcaption
+				h4
+					+fz(.5rem)
+					left: 55%
+					&:after
+						transform: translate(-320%, 5%)
+		+media-breakpoint-up(md)
+			figcaption
+				h2
+					+fz(1.5rem)
+				h3
+					+fz(1.3rem)
+				h4
+					+fz(.7rem)
+					left: 45%
+					bottom: 23%
+					&:after
+						transform: translate(-400%, 5%)
+				p
+					+fz(1.2rem)
+		
+		+media-breakpoint-up(lg)
+			figure
+				.text
+					h2
+						+fz(1.5rem)
+				.apple
+					img
+						max-height: 5rem
+				.sale
+					img
+						max-height: 5rem
+				.dinhvi
+					+fz(1rem)
+				.voucher
+					+fz(1rem)
+
+
+			figcaption
+				h2
+					+fz(1.7rem)
+				h3
+					+fz(1.5rem)
+				h4
+					+fz(.8rem)
+					left: 35%
+					bottom: 25%
+				p
+					+fz(1.3rem)
+				i
+					+fz(1.3rem)

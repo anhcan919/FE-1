@@ -1,0 +1,80 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.cart
+		.container
+			.row
+				.col.text-center
+					.title
+						h1 Fond-End Master
+			.row
+				.col-sm-6.mb-4
+					.box
+						.content
+							a(href="#")
+								figure
+									.time
+										i.fa.fa-clock-o.mt-1
+										.ml-2 Còn 15 Ngày 14:46:14
+									.text
+										h2 Xem Ngay
+									.apple
+										img(src="img/apple.png", alt="")
+									.sale
+										img(src="img/logo.png", alt="")
+									.dinhvi
+										i.fa.fa-map-marker
+										.ml-2 Quận 5
+									.voucher
+										i.fa.fa-mobile
+										.ml-2 E-Voucher
+									img.img-fluid(src="img/kidney.jpg", alt="")
+								figcaption
+									h2 06 Tuần Mua Sắm Iphone XS Max Cùng Những Quả Thận...
+									h3 29.000.000
+										sup đ
+									h4 -73%
+									p 35.000.000 
+										sup đ
+									i.fa.fa-user
+										.ml-2 100										 
+				.col-sm-6.mb-4
+					.box
+						.content
+							a(href="#")
+								figure
+									.time
+										i.fa.fa-clock-o.mt-1
+										.ml-2 Còn 15 Ngày 14:46:14
+											
+									.text
+										h2 Xem Ngay
+									.apple
+										img(src="img/apple.png", alt="")
+									.sale
+										img(src="img/logo.png", alt="")
+									.dinhvi
+										i.fa.fa-map-marker
+										.ml-2 Quận 5
+									.voucher
+										i.fa.fa-mobile
+										.ml-2 E-Voucher
+									img.img-fluid(src="img/kidney.jpg", alt="")
+								figcaption
+									h2 06 Tuần Mua Sắm Iphone XS Max Cùng Những Quả Thận...
+									h3 29.000.000
+										sup đ
+									h4 -73%
+									p 35.000.000 
+										sup đ
+									i.fa.fa-user 
+										.ml-2 100										 
+									 
